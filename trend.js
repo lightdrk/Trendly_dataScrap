@@ -3,8 +3,8 @@ const progress = require('cli-progress');
 const math = require('math')
 const fs = require('fs');
 
-const email = '';
-const password = '';
+const Email = '';
+const Password = '';
 const file = 'STonk.txt';
 const bar1 = new progress.SingleBar({},progress.Presets.shades_classic);
 var stockList= (fs.readFileSync(file,'utf-8')).split('\n');
@@ -32,11 +32,11 @@ bar1.start(stockList.length,0);
 			const email = await page.$('#id_login');
 			if (email){
 				
-				await email.type(email);
+				await email.type(Email);
 				
 				const password = await page.$('#id_password');
 	
-				await password.type(password);
+				await password.type(Password);
 	
 				await page.click('button[class ="btn btn-sm btn-block tl-btn-blue p-x-2 pull-right login-btn"]');
 			}
