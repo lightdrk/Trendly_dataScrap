@@ -30,9 +30,7 @@ Before running the script, ensure you have the following prerequisites installed
 
 2. Execute the script using the following command:
 
-
-
-Replace `your-script-name.js` with the actual filename of your script.
+  `trend.js` 
 
 3. The script will launch a headless Chromium browser, navigate to the financial website, and log in using the provided email and password.
 
